@@ -24,7 +24,7 @@ export default function Main({ history }) {
   }
 
   async function handleOk( id ){
-    await api.delete(`/sticky/delete/${ id }`);
+    await api.delete(`/stickys/${ id }`);
 
     setStickys( stickys.filter( sticky => sticky._id !== id ));
   }

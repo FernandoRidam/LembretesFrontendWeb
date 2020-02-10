@@ -10,7 +10,7 @@ export default function StickyForm({ history }) {
   async function handleSubmit( e ) {
     e.preventDefault();
 
-    await api.post('/sticky/new', {
+    await api.post('/stickys', {
       title,
       message,
     });
